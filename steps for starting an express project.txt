@@ -1,0 +1,20 @@
+Create a project folder. Navigate in there on terminal.
+npm init -y, make sure it made package.json. Make sure “main” is set to “index.ejs”.
+npm install express --save, make sure it made the node_modules folder.
+npm install ejs —-save, npm install body-parser —save.
+Check package.json dependencies.
+Create a server.js
+On server.js
+	require express, path, body-parser (to handle form data)
+	invoke express as var app.
+	use bodyParser.
+	set up ejs and views folder route (because I’l need to echo stuff out in a view).
+	require a route file in another folder.
+		make a routes folder
+		create index.js to contain all the routes.
+			route root to be index.ejs view (form page)
+			route post data object to result and render view.
+	tell the express app which port to listen on.
+Create views folder to house the index.ejs(form) and result.ejs (use <%= %> to echo out pieces of data.
+Run “nodemon server.js” in terminal to start server.
+Test by filling out form and seeing if it redirects to result view with the data you just inputted. 
